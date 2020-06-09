@@ -52,8 +52,8 @@ When executing the above commands with Sample_Script_A.bro, a subset of the GOOS
 
 ## Generated Event
 On successful parsing of a packet, an event is raised with the following signature, accessible from user-defined scripts.
-<br\>`event goose_packet_event(p: goose_records::gcp)`
-The input parameter p, of type, goose_records::gcp is a Zeek record and defines the following fields in init-bare.bro
+<br/>`event goose_packet_event(p: goose_records::gcp)`<br/>
+The input parameter p, of type, goose_records::gcp is a Zeek record and defines the following fields in init-bare.bro:
 |Description|Field Name|Zeek Datatype|
 |---|---|---|
 |Packet timestamp|packet_ts|double|
@@ -68,4 +68,4 @@ The input parameter p, of type, goose_records::gcp is a Zeek record and defines 
 *All data entries of type int, bool and float will be converted to double when passed from the event engine to the scripting layer.
 
 ## Further Reading
-*TODO: link to user guide
+Please refer to the [doc/](doc) folder for full list of modified files, parser design and contact information.
