@@ -28,6 +28,8 @@ git submodule update --init --recursive
 ```
 2.	Apply the GOOSE parser as a patch. The whitespace warnings may be ignored.
 <br/>`git apply --reject --whitespace=fix goose_parser.patch`
+<br/>Note: Please refer to the User Guide in the [doc/](doc) folder for the full list of modified files.
+
 3.	Build and install from source. Some commands may require root privileges.
 ```
 ./configure
@@ -68,4 +70,4 @@ The input parameter p, of type, goose_records::gcp is a Zeek record and defines 
 *All data entries of type int, bool and float will be converted to double when passed from the event engine to the scripting layer.
 
 ## Further Reading
-Please refer to the [doc/](doc) folder for full list of modified files, parser design and contact information.
+Please refer to the [doc/](doc) folder for the parser design and contact information.
