@@ -26,9 +26,11 @@ https://docs.zeek.org/en/current/install/install.html#required-dependencies
 cd <zeek_dir>/
 git checkout aff3f4
 git submodule update --init --recursive
+cd ..
 ```
 2.	Apply the GOOSE parser as a patch. The whitespace warnings may be ignored.
-```git clone https://github.com/smartgridadsc/Goose-protocol-parser-for-Zeek-IDS
+```
+git clone https://github.com/smartgridadsc/Goose-protocol-parser-for-Zeek-IDS
 mv Goose-protocol-parser-for-Zeek-IDS/patch/goose_parser.patch zeek/ && cd zeek
 git apply --reject --whitespace=fix goose_parser.patch
 ```
