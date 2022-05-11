@@ -22,7 +22,8 @@ https://docs.zeek.org/en/current/install/install.html#required-dependencies
 
 ### Patch Installation
 1.	Switch to a snapshot of the Zeek repository that is compatible with the GOOSE parser.
-```cd <zeek_dir>/
+```
+cd <zeek_dir>/
 git checkout aff3f4
 git submodule update --init --recursive
 ```
